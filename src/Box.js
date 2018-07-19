@@ -12,7 +12,7 @@ class Box extends React.Component {
   render () {
     return (
       <div className="box">
-        &nbsp;
+        {this.props.message}
       </div>
     );
   }
