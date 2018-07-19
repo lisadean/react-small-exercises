@@ -1,5 +1,9 @@
 import React from 'react';
 
+function printMessage() {
+  console.log('Hello from the box!');
+}
+
 class Box extends React.Component {
 
   constructor(props) {
@@ -9,10 +13,12 @@ class Box extends React.Component {
     }
   }
 
+
   render () {
     return (
       <div className="box">
         {this.props.message}
+        <button onClick={printMessage}>Click me!</button>
       </div>
     );
   }
